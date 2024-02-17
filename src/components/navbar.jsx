@@ -10,6 +10,7 @@ const [isOpen, setIsOpen] = useState(false);
   };
 
   return (
+    <>
     <nav className="navbar">
       <div className="navbar-container">
         <div className="brand">Krishnamenan</div>
@@ -24,6 +25,8 @@ const [isOpen, setIsOpen] = useState(false);
         </ul>
       </div>
     </nav>
+    
+  </>
   );
 }
 export default Nav;

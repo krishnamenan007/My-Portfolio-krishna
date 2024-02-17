@@ -1,15 +1,27 @@
 /* Navbar.css */
 
 .navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-  }
+ border-radius: 2px;
+ color: aliceblue;
+ background: #101e5b;
+ padding: 10px 20px;
+ z-index: 100;
+}
+
+.navbar a{
+  color: #fef9f9;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #f300b4; /* Text color on hover */
   
+}
   .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #ffffff;
   }
   
   .brand {
@@ -20,6 +32,7 @@
     list-style: none;
     display: flex;
     align-items: center;
+    color: #ffffff !important;
   }
   
   .nav-links.mobile {
@@ -28,11 +41,13 @@
   
   .nav-links li {
     margin-right: 20px;
+    color: #ffffff !important;
+    
   }
   
   .toggle-button {
     background-color: transparent;
-    color: #fff;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
@@ -50,12 +65,14 @@
       position: absolute;
       top: 60px; /* Height of your navbar */
       left: 0;
-      background-color: #333;
+      background-color: transparent;
       padding: 20px;
+      color: #ffffff;
     }
   
     .nav-links.mobile {
       display: flex;
+      z-index: 100;
     }
   
     .nav-links li {
